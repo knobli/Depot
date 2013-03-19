@@ -15,7 +15,7 @@ class Product < ActiveRecord::Base
 
   protected
   def validate_description_length
-    if ! /[\d\w]{30}/.match(self.description)
+    if /[\d\w]{30}/.match(self.description)
       return false
     end
     return true
