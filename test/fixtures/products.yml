@@ -3,13 +3,20 @@
 one:
   title: MyString
   description: MyText
-  price: 9.99
-  image_url: MyString
+  price: 0.99
+  image_url: MyString.gif
   available: false
 
 two:
-  title: MyString
-  description: MyText sadflösd asdkfasd asddadsfasdf asdfasd
+  title: MyString Second
+  description: MyText asdkfasd asddadsfasdf asdfasd asdkl asdfe
   price: 9.99
-  image_url: MyString
-  available: false 
+  image_url: MyString.jpg
+  available: true 
+  
+three:
+  title: MyString THird
+  description: MyText sadflösd asdkfasd asddadsfasdf asdfasd
+  price: 19.99
+  image_url: MyString.jpg
+  available: true 
