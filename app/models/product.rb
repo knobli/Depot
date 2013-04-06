@@ -10,13 +10,13 @@ class Product < ActiveRecord::Base
   protected
   def validate_description
     return unless self.validate_description_length
-    errors.add(:fields,"Description does no match with the criterias")
+    errors.add(:fields,"Description does no match with the criterias (min 30 characters long)")
   end  
 
   protected
   def validate_description_length
-    if self.description.match(/[\d\w]{30}/)
-      return false
+    if description.match(/\w{30}/)
+      return false  
     end
     return true
   end  
