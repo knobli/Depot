@@ -14,12 +14,13 @@
 	<div id="columns">
 		<div id="side">
 			<%=link_to 'Home', "/" %><br>
-			<%=link_to "Products", products_path() 	%>
+			<%=link_to "Products", products_path() 	%><br>
+			<%=link_to "Cart", cart_path(current_cart) 	%>
 		</div>	
 	
 		<div id="main">
 			<%= yield %>
-		</div>>
+		</div>
 	</div>		
 
 </body>
